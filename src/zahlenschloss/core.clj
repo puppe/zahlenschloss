@@ -44,8 +44,8 @@
   (reduce * (repeat n x)))
 
 (defn wert
-  [ziffern]
   "Nimmt eine Folge von Ziffern und berechnet ihren Zahlenwert."
+  [ziffern]
   (loop [summe 0
          faktor (exp 10 (dec (count ziffern)))
          [ziffer & ziffern] ziffern]
