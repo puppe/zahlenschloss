@@ -1,36 +1,25 @@
 # zahlenschloss
 
-FIXME: description
+Siehe <https://mpuppe.de/blog/2016/04/03/knobeln-mit-clojure/>.
 
-## Installation
+Gesucht wird die Kombination für ein Zahlenschloss. Das Zahlenschoss hat
+sechs Ziffern. Die gesuchte Zahl muss die folgenden Bedingungen
+erfüllen:
 
-Download from http://example.com/FIXME.
+1. Die Zahl ist durch 4 teilbar.
+2. Die Zahl ist rückwärts ebenfalls durch 4 teilbar.
+3. Die Zahl ist durch 7 teilbar.
+4. Die Zahl ist *nicht* durch 11 teilbar.
+5. Die Quersumme der Zahl beträgt 32.
+6. Jede Ziffer kommt in der Zahl entweder doppelt oder gar nicht vor.
 
-## Usage
+Dieses Repository enthält ein Clojure-Programm, das die Lösung ausgibt.
 
-FIXME: explanation
+Am einfachsten ist es, das Programm mit
+[Leiningen](http://leiningen.org/) auszuführen. `lein run` spuckt die
+Lösung aus, `lein test` lässt die Tests durchlaufen.
 
-    $ java -jar zahlenschloss-0.1.0-standalone.jar [args]
+Copyright © 2016 Martin Puppe
 
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2016 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+Distributed under the GNU General Public License either version 3.0 or
+(at your option) any later version.
