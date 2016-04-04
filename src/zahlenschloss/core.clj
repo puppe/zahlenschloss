@@ -101,10 +101,9 @@
 
 (defn -main
   [& args]
-  (println "Mögliche Lösung(en):")
-  (apply
-    println
-    (->> (range 0 1000000)
+  (print "Lösung: ")
+  (println
+    (->> (range)
          ; Die Zahl ist durch 4 teilbar.
          (filter teilbar4?)
          ; Die Zahl ist rückwärts ebenfalls durch 4 teilbar.
@@ -117,5 +116,5 @@
          (filter #(= 32 (quersumme %)))
          ; Jede Ziffer kommt entweder doppelt oder gar nicht vor.
          (filter doppelt-oder-gar-nicht?)
-         ; Wir geben maximal 10 Zahlen aus.
-         (take 10))))
+         ; Wir wollen nur die erste Zahl, die alle Bedingungen erfüllt.
+         (first))))
